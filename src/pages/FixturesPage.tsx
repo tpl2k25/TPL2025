@@ -125,7 +125,10 @@ const FixturesPage = () => {
                       stage={fixture.stage}
                       homeScore={fixture.homeScore}
                       awayScore={fixture.awayScore}
-                      scorers={fixture.scorers}
+                      scorers={fixture.scorers.map(scorer => ({
+                        ...scorer,
+                        team: scorer.team as "home" | "away" // Type assertion to ensure it matches the expected type
+                      }))}
                     />
                   ))}
                 </div>

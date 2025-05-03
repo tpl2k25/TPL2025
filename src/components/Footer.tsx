@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import Logo from "../../public/lovable-uploads/e6222346-045b-4a68-8a9f-351d3d809586.png";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           {/* Logo & Info */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <img src="/lovable-uploads/e6222346-045b-4a68-8a9f-351d3d809586.png" alt="TPL Logo" className="w-12 h-12" />
+              <img src={Logo} alt="TPL Logo" className="w-12 h-12" />
               <span className="font-montserrat font-bold text-xl text-green-600">TPL</span>
             </Link>
             <p className="text-gray-600 text-sm">

@@ -97,7 +97,8 @@ const FixturesPage = () => {
                       venue={fixture.venue}
                       homeTeam={fixture.homeTeam}
                       awayTeam={fixture.awayTeam}
-                      stage={fixture.stage}
+                      stage={fixture.stage} 
+                      logo={fixture.logo}
                     />
                   ))}
                 </div>

@@ -7,7 +7,7 @@ import { highlights } from "@/data/mockData";
 
 const HomePage = () => {
   // Set the target date for the next match
-  const nextMatchDate = new Date(2025, 6, 15, 19, 30); // July 15, 2025, 7:30 PM
+  const nextMatchDate = new Date(2025, 4, 11, 8, 30); // July 15, 2025, 7:30 PM
 
   return (
     <div>

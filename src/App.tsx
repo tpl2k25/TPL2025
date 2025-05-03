@@ -13,7 +13,6 @@ import FixturesPage from "./pages/FixturesPage";
 import TeamsPage from "./pages/TeamsPage";
 import TeamDetailPage from "./pages/TeamDetailPage";
 import PlayersPage from "./pages/PlayersPage";
-import GalleryPage from "./pages/GalleryPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,7 +32,6 @@ const App = () => (
             <Route path="/teams" element={<TeamsPage />} />
             <Route path="/teams/:teamId" element={<TeamDetailPage />} />
             <Route path="/players" element={<PlayersPage />} />
-            <Route path="/gallery" element={<GalleryPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

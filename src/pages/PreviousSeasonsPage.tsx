@@ -40,111 +40,124 @@ const PreviousSeasonsPage = () => {
       
       <section className="py-16 bg-gray-50">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <SectionHeading 
-              title="Season Details" 
-              subtitle="Complete information about each TPL season"
-              alignment="center"
-            />
-            
-            {previousSeasons.map((season) => (
-              <div key={season.year} className="mt-12 bg-white rounded-lg shadow-md p-6 space-y-6">
-                <h3 className="text-2xl font-bold text-tpl-navy">{season.year} Season</h3>
-                
-                <p className="text-gray-700 leading-relaxed">
+          {previousSeasons.map((season) => (
+            <div key={season.year} className="mt-12 bg-white rounded-lg shadow-md overflow-hidden mb-16">
+              <h3 className="text-3xl font-bold text-tpl-navy p-6 border-b">{season.year} Season</h3>
+              
+              <div className="p-6">
+                <p className="text-gray-700 leading-relaxed mb-8">
                   {season.summary}
                 </p>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="text-lg font-semibold mb-3">Champions & Finalists</h4>
-                    <div className="space-y-3">
-                      <div className="flex items-center p-3 bg-gray-50 rounded-lg">
-                        <div className="flex items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                  {/* Champions Section */}
+                  <div className="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
+                    <div className="bg-tpl-navy text-white p-4">
+                      <h4 className="text-xl font-semibold">Champions: {season.champion.name}</h4>
+                    </div>
+                    <div className="p-6">
+                      <div className="flex flex-col items-center">
+                        <img 
+                          src={season.champion.logo} 
+                          alt={`${season.champion.name} Logo`}
+                          className="h-48 w-48 object-contain mb-4" 
+                        />
+                        <div className="flex items-center mt-4 bg-gray-100 rounded-lg p-4 w-full">
                           <img 
-                            src={season.champion.logo} 
-                            alt={season.champion.name} 
-                            className="h-10 w-10 object-contain mr-3" 
+                            src={season.championCaptain?.photo || season.bestPlayer.photo} 
+                            alt={`${season.championCaptain?.name || 'Team Captain'}`}
+                            className="h-16 w-16 object-cover rounded-full mr-4" 
                           />
                           <div>
-                            <p className="font-medium">{season.champion.name}</p>
-                            <p className="text-sm text-tpl-gray">Champions</p>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-center p-3 bg-gray-50 rounded-lg">
-                        <div className="flex items-center">
-                          <img 
-                            src={season.runnerUp.logo} 
-                            alt={season.runnerUp.name} 
-                            className="h-10 w-10 object-contain mr-3" 
-                          />
-                          <div>
-                            <p className="font-medium">{season.runnerUp.name}</p>
-                            <p className="text-sm text-tpl-gray">Runners-up</p>
+                            <p className="font-semibold">{season.championCaptain?.name || 'Team Captain'}</p>
+                            <p className="text-sm text-tpl-gray">Captain</p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   
-                  <div>
-                    <h4 className="text-lg font-semibold mb-3">Individual Awards</h4>
-                    <div className="space-y-3">
-                      <div className="flex items-center p-3 bg-gray-50 rounded-lg">
+                  {/* Runners-up Section */}
+                  <div className="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
+                    <div className="bg-tpl-navy text-white p-4">
+                      <h4 className="text-xl font-semibold">Runners-up: {season.runnerUp.name}</h4>
+                    </div>
+                    <div className="p-6">
+                      <div className="flex flex-col items-center">
                         <img 
-                          src={season.topScorer.photo} 
-                          alt={season.topScorer.name} 
-                          className="h-10 w-10 object-cover rounded-full mr-3" 
+                          src={season.runnerUp.logo} 
+                          alt={`${season.runnerUp.name} Logo`}
+                          className="h-48 w-48 object-contain mb-4" 
                         />
-                        <div>
-                          <p className="font-medium">{season.topScorer.name}</p>
-                          <p className="text-sm text-tpl-gray">Golden Boot • {season.topScorer.goals} goals</p>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-center p-3 bg-gray-50 rounded-lg">
-                        <img 
-                          src={season.bestPlayer.photo} 
-                          alt={season.bestPlayer.name} 
-                          className="h-10 w-10 object-cover rounded-full mr-3" 
-                        />
-                        <div>
-                          <p className="font-medium">{season.bestPlayer.name}</p>
-                          <p className="text-sm text-tpl-gray">Golden Ball • Best Player</p>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-center p-3 bg-gray-50 rounded-lg">
-                        <img 
-                          src={season.bestGoalkeeper.photo} 
-                          alt={season.bestGoalkeeper.name} 
-                          className="h-10 w-10 object-cover rounded-full mr-3" 
-                        />
-                        <div>
-                          <p className="font-medium">{season.bestGoalkeeper.name}</p>
-                          <p className="text-sm text-tpl-gray">Golden Glove • Best Goalkeeper</p>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-center p-3 bg-gray-50 rounded-lg">
-                        <img 
-                          src={season.bestYoungPlayer.photo} 
-                          alt={season.bestYoungPlayer.name} 
-                          className="h-10 w-10 object-cover rounded-full mr-3" 
-                        />
-                        <div>
-                          <p className="font-medium">{season.bestYoungPlayer.name}</p>
-                          <p className="text-sm text-tpl-gray">Best Young Player • {season.bestYoungPlayer.age} years</p>
+                        <div className="flex items-center mt-4 bg-gray-100 rounded-lg p-4 w-full">
+                          <img 
+                            src={season.runnerUpCaptain?.photo || season.topScorer.photo} 
+                            alt={`${season.runnerUpCaptain?.name || 'Team Captain'}`}
+                            className="h-16 w-16 object-cover rounded-full mr-4" 
+                          />
+                          <div>
+                            <p className="font-semibold">{season.runnerUpCaptain?.name || 'Team Captain'}</p>
+                            <p className="text-sm text-tpl-gray">Captain</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                
+                <h4 className="text-xl font-bold text-tpl-navy mb-4">Individual Awards</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                  <div className="flex items-center p-4 bg-gray-50 rounded-lg">
+                    <img 
+                      src={season.topScorer.photo} 
+                      alt={season.topScorer.name} 
+                      className="h-16 w-16 object-cover rounded-full mr-3" 
+                    />
+                    <div>
+                      <p className="font-medium">{season.topScorer.name}</p>
+                      <p className="text-sm text-tpl-gray">Golden Boot • {season.topScorer.goals} goals</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center p-4 bg-gray-50 rounded-lg">
+                    <img 
+                      src={season.bestPlayer.photo} 
+                      alt={season.bestPlayer.name} 
+                      className="h-16 w-16 object-cover rounded-full mr-3" 
+                    />
+                    <div>
+                      <p className="font-medium">{season.bestPlayer.name}</p>
+                      <p className="text-sm text-tpl-gray">Golden Ball • Best Player</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center p-4 bg-gray-50 rounded-lg">
+                    <img 
+                      src={season.bestGoalkeeper.photo} 
+                      alt={season.bestGoalkeeper.name} 
+                      className="h-16 w-16 object-cover rounded-full mr-3" 
+                    />
+                    <div>
+                      <p className="font-medium">{season.bestGoalkeeper.name}</p>
+                      <p className="text-sm text-tpl-gray">Golden Glove • Best Goalkeeper</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center p-4 bg-gray-50 rounded-lg">
+                    <img 
+                      src={season.bestYoungPlayer.photo} 
+                      alt={season.bestYoungPlayer.name} 
+                      className="h-16 w-16 object-cover rounded-full mr-3" 
+                    />
+                    <div>
+                      <p className="font-medium">{season.bestYoungPlayer.name}</p>
+                      <p className="text-sm text-tpl-gray">Best Young Player • {season.bestYoungPlayer.age} years</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </section>
     </div>

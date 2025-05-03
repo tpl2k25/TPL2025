@@ -1,4 +1,3 @@
-
 // Mock data for the TPL website
 
 export const teams = [
@@ -74,7 +73,8 @@ export const players = [
     teamId: "team1",
     teamName: "Thorkulam Warriors",
     teamLogo: "https://images.unsplash.com/photo-1580564931796-db6ba6293aff?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
-    instagramUrl: "https://instagram.com"
+    instagramUrl: "https://instagram.com",
+    isCaptain: true
   },
   {
     id: "player2",
@@ -85,7 +85,8 @@ export const players = [
     teamId: "team2",
     teamName: "Pallikkara Panthers",
     teamLogo: "https://images.unsplash.com/photo-1571360674439-7f4f1c43ab37?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
-    instagramUrl: "https://instagram.com"
+    instagramUrl: "https://instagram.com",
+    isCaptain: true
   },
   {
     id: "player3",
@@ -95,7 +96,8 @@ export const players = [
     age: 28,
     teamId: "team3",
     teamName: "Koduvally Kings",
-    teamLogo: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
+    teamLogo: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    isCaptain: true
   },
   {
     id: "player4",
@@ -199,7 +201,7 @@ export const fixtures = [
   {
     id: "fix1",
     date: new Date(2025, 6, 15, 19, 30), // July 15, 2025, 7:30 PM
-    venue: "Thorkulam Stadium",
+    venue: "Kavil Arena",
     homeTeam: teams[0],
     awayTeam: teams[1],
     stage: "Group Stage"
@@ -207,7 +209,7 @@ export const fixtures = [
   {
     id: "fix2",
     date: new Date(2025, 6, 16, 17, 0), // July 16, 2025, 5:00 PM
-    venue: "Pallikkara Arena",
+    venue: "Kavil Arena",
     homeTeam: teams[2],
     awayTeam: teams[3],
     stage: "Group Stage"
@@ -215,7 +217,7 @@ export const fixtures = [
   {
     id: "fix3",
     date: new Date(2025, 6, 18, 19, 0), // July 18, 2025, 7:00 PM
-    venue: "Koduvally Sports Complex",
+    venue: "Kavil Arena",
     homeTeam: teams[4],
     awayTeam: teams[5],
     stage: "Group Stage"
@@ -223,7 +225,7 @@ export const fixtures = [
   {
     id: "fix4",
     date: new Date(2025, 6, 21, 18, 30), // July 21, 2025, 6:30 PM
-    venue: "Thorkulam Stadium",
+    venue: "Kavil Arena",
     homeTeam: teams[0],
     awayTeam: teams[2],
     stage: "Group Stage"
@@ -231,7 +233,7 @@ export const fixtures = [
   {
     id: "fix5",
     date: new Date(2025, 7, 2, 19, 30), // August 2, 2025, 7:30 PM
-    venue: "Calicut City Ground",
+    venue: "Kavil Arena",
     homeTeam: teams[3],
     awayTeam: teams[1],
     stage: "Quarterfinals"
@@ -239,10 +241,74 @@ export const fixtures = [
   {
     id: "fix6",
     date: new Date(2025, 7, 9, 20, 0), // August 9, 2025, 8:00 PM
-    venue: "Thorkulam Stadium",
+    venue: "Kavil Arena",
     homeTeam: teams[0],
     awayTeam: teams[4],
     stage: "Semifinals"
+  }
+];
+
+// Add past fixtures with scores and scorers
+export const pastFixtures = [
+  {
+    id: "pastfix1",
+    date: new Date(2025, 6, 5, 19, 0), // July 5, 2025, 7:00 PM
+    venue: "Kavil Arena",
+    homeTeam: teams[0],
+    awayTeam: teams[3],
+    stage: "Group Stage",
+    homeScore: 3,
+    awayScore: 1,
+    scorers: [
+      { name: "Rahul Menon", team: "home", minute: 23 },
+      { name: "Sanjay Varma", team: "away", minute: 38 },
+      { name: "Ravi Pillai", team: "home", minute: 56 },
+      { name: "Rahul Menon", team: "home", minute: 82 }
+    ]
+  },
+  {
+    id: "pastfix2",
+    date: new Date(2025, 6, 7, 17, 30), // July 7, 2025, 5:30 PM
+    venue: "Kavil Arena",
+    homeTeam: teams[1],
+    awayTeam: teams[2],
+    stage: "Group Stage",
+    homeScore: 2,
+    awayScore: 2,
+    scorers: [
+      { name: "Arun Kumar", team: "home", minute: 15 },
+      { name: "Vijay Nair", team: "away", minute: 34 },
+      { name: "Adarsh Menon", team: "away", minute: 67 },
+      { name: "Fahad Ahmed", team: "home", minute: 89 }
+    ]
+  },
+  {
+    id: "pastfix3",
+    date: new Date(2025, 6, 8, 19, 0), // July 8, 2025, 7:00 PM
+    venue: "Kavil Arena",
+    homeTeam: teams[4],
+    awayTeam: teams[0],
+    stage: "Group Stage",
+    homeScore: 0,
+    awayScore: 2,
+    scorers: [
+      { name: "Rahul Menon", team: "away", minute: 45 },
+      { name: "Saheer Ali", team: "away", minute: 76 }
+    ]
+  },
+  {
+    id: "pastfix4",
+    date: new Date(2025, 6, 10, 18, 0), // July 10, 2025, 6:00 PM
+    venue: "Kavil Arena",
+    homeTeam: teams[5],
+    awayTeam: teams[3],
+    stage: "Group Stage",
+    homeScore: 1,
+    awayScore: 1,
+    scorers: [
+      { name: "Mohammed Rizwan", team: "home", minute: 54 },
+      { name: "Sanjay Varma", team: "away", minute: 79 }
+    ]
   }
 ];
 
@@ -253,9 +319,17 @@ export const previousSeasons = [
       name: "Thorkulam Warriors",
       logo: "https://images.unsplash.com/photo-1580564931796-db6ba6293aff?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
     },
+    championCaptain: {
+      name: "Rahul Menon",
+      photo: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
+    },
     runnerUp: {
       name: "Koduvally Kings",
       logo: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    },
+    runnerUpCaptain: {
+      name: "Vijay Nair",
+      photo: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
     },
     topScorer: {
       name: "Rahul Menon",
@@ -287,9 +361,17 @@ export const previousSeasons = [
       name: "Koduvally Kings",
       logo: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
     },
+    championCaptain: {
+      name: "Vijay Nair",
+      photo: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
+    },
     runnerUp: {
       name: "Calicut Dynamos",
       logo: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    },
+    runnerUpCaptain: {
+      name: "Sanjay Varma",
+      photo: "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
     },
     topScorer: {
       name: "Adarsh Menon",
@@ -321,9 +403,17 @@ export const previousSeasons = [
       name: "Thorkulam Warriors",
       logo: "https://images.unsplash.com/photo-1580564931796-db6ba6293aff?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
     },
+    championCaptain: {
+      name: "Rahul Menon",
+      photo: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
+    },
     runnerUp: {
       name: "Pallikkara Panthers",
       logo: "https://images.unsplash.com/photo-1571360674439-7f4f1c43ab37?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    },
+    runnerUpCaptain: {
+      name: "Arun Kumar",
+      photo: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
     },
     topScorer: {
       name: "Arun Kumar",

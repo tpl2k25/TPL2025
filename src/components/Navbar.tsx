@@ -14,7 +14,6 @@ const Navbar = () => {
     { name: "Fixtures", path: "/fixtures" },
     { name: "Teams", path: "/teams" },
     { name: "Players", path: "/players" },
-    { name: "Gallery", path: "/gallery" },
   ];
 
   const toggleMenu = () => {
@@ -24,16 +23,15 @@ const Navbar = () => {
   return (
     <header className="bg-tpl-navy text-white sticky top-0 z-50 shadow-md">
       <div className="container-custom flex items-center justify-between py-4">
-        {/* Logo & Brand */}
+        {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <div className="rounded-full bg-white p-1">
-            <div className="w-8 h-8 rounded-full bg-tpl-navy flex items-center justify-center">
-              <span className="font-bold text-tpl-orange">TPL</span>
-            </div>
+          <div className="w-12 h-12">
+            <img 
+              src="/lovable-uploads/e6222346-045b-4a68-8a9f-351d3d809586.png" 
+              alt="TPL Logo" 
+              className="w-full h-full object-contain" 
+            />
           </div>
-          <span className="font-montserrat font-bold text-xl hidden sm:block">
-            Thorkulam <span className="text-tpl-orange">Premier</span> League
-          </span>
         </Link>
 
         {/* Desktop Navigation */}

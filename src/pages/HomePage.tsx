@@ -19,7 +19,7 @@ const HomePage = () => {
         bgImage="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
       />
       
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-green-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <CountdownTimer targetDate={nextMatchDate} eventName="Next Match" />
@@ -48,8 +48,8 @@ const HomePage = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-tpl-navy mb-2">{highlight.title}</h3>
-                  <p className="text-tpl-gray">{highlight.content}</p>
+                  <h3 className="text-xl font-bold text-green-700 mb-2">{highlight.title}</h3>
+                  <p className="text-gray-700">{highlight.content}</p>
                 </div>
               </div>
             ))}
@@ -57,7 +57,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-r from-tpl-navy to-blue-900 text-white">
+      <section className="py-16 bg-green-600 text-white">
         <div className="container-custom">
           <SectionHeading 
             title="Quick Access" 
@@ -69,23 +69,78 @@ const HomePage = () => {
             <Link to="/fixtures" className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center hover:bg-white/20 transition-colors">
               <div className="text-5xl font-bold mb-4">⚽</div>
               <h3 className="text-xl font-bold mb-2">Fixtures</h3>
-              <p className="text-gray-300">View all upcoming matches</p>
+              <p className="text-gray-100">View all upcoming matches</p>
             </Link>
             <Link to="/teams" className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center hover:bg-white/20 transition-colors">
               <div className="text-5xl font-bold mb-4">🏆</div>
               <h3 className="text-xl font-bold mb-2">Teams</h3>
-              <p className="text-gray-300">Learn about all TPL teams</p>
+              <p className="text-gray-100">Learn about all TPL teams</p>
             </Link>
             <Link to="/players" className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center hover:bg-white/20 transition-colors">
               <div className="text-5xl font-bold mb-4">👤</div>
               <h3 className="text-xl font-bold mb-2">Players</h3>
-              <p className="text-gray-300">Explore player profiles</p>
+              <p className="text-gray-100">Explore player profiles</p>
             </Link>
             <Link to="/previous-seasons" className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center hover:bg-white/20 transition-colors">
               <div className="text-5xl font-bold mb-4">🗓️</div>
               <h3 className="text-xl font-bold mb-2">History</h3>
-              <p className="text-gray-300">Previous seasons and champions</p>
+              <p className="text-gray-100">Previous seasons and champions</p>
             </Link>
+          </div>
+        </div>
+      </section>
+      
+      {/* New featured section */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-6">Experience Elite Football</h2>
+              <p className="text-gray-700 mb-6">
+                The Thorkulam Premier League brings together the region's most talented footballers for an unforgettable tournament experience. With elite competition, passionate fans, and a legacy of excellence, TPL has become the premier football event of the year.
+              </p>
+              <p className="text-gray-700 mb-8">
+                Join us at Kavil Arena to witness skillful play, dramatic moments, and the crowning of champions in an atmosphere of pure footballing excitement.
+              </p>
+              <Link to="/about" className="btn-primary">Learn More About TPL</Link>
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-xl">
+              <img 
+                src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                alt="Football action" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Statistics section */}
+      <section className="py-16 bg-green-50">
+        <div className="container-custom">
+          <SectionHeading 
+            title="TPL by the Numbers" 
+            subtitle="The growing legacy of our premier tournament"
+            alignment="center"
+          />
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+            <div className="bg-white p-6 rounded-xl shadow text-center">
+              <div className="text-4xl font-bold text-green-600 mb-2">6</div>
+              <p className="text-gray-700">Teams</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow text-center">
+              <div className="text-4xl font-bold text-green-600 mb-2">120+</div>
+              <p className="text-gray-700">Players</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow text-center">
+              <div className="text-4xl font-bold text-green-600 mb-2">10K</div>
+              <p className="text-gray-700">Spectators</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow text-center">
+              <div className="text-4xl font-bold text-green-600 mb-2">5</div>
+              <p className="text-gray-700">Seasons</p>
+            </div>
           </div>
         </div>
       </section>

@@ -9,11 +9,7 @@ const Footer = () => {
           {/* Logo & Info */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="rounded-full bg-white p-1">
-                <div className="w-8 h-8 rounded-full bg-tpl-navy flex items-center justify-center">
-                  <span className="font-bold text-tpl-orange">TPL</span>
-                </div>
-              </div>
+              <img src="/assets/tpl-logo.png" alt="TPL Logo" className="w-12 h-12" />
               <span className="font-montserrat font-bold text-xl">TPL</span>
             </Link>
             <p className="text-gray-300 text-sm">
@@ -37,14 +33,13 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/teams" className="text-gray-300 hover:text-tpl-orange">Teams</Link></li>
               <li><Link to="/players" className="text-gray-300 hover:text-tpl-orange">Players</Link></li>
-              <li><Link to="/gallery" className="text-gray-300 hover:text-tpl-orange">Gallery</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <p className="text-gray-300">Thorkulam Stadium</p>
+            <p className="text-gray-300">Kavil Arena</p>
             <p className="text-gray-300">info@tpl-league.com</p>
             <p className="text-gray-300">+91 9876543210</p>
           </div>

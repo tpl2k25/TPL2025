@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="container-custom flex items-center justify-between py-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-12 h-12">
+          <div className="" style={{ width: "65px", height: "65px" }}>
             <img 
               src="/lovable-uploads/e6222346-045b-4a68-8a9f-351d3d809586.png" 
               alt="TPL Logo" 

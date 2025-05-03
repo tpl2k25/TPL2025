@@ -16,13 +16,13 @@ const SectionHeading = ({
       alignment === 'right' ? 'text-right' : 
       'text-left'
     }`}>
-      <h2 className="text-3xl md:text-4xl font-bold text-tpl-navy">
+      <h2 className="text-3xl md:text-4xl font-bold text-green-600">
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-2 text-tpl-gray">{subtitle}</p>
+        <p className="mt-2 text-gray-600">{subtitle}</p>
       )}
-      <div className={`h-1 w-24 bg-tpl-orange mt-4 ${
+      <div className={`h-1 w-24 bg-green-600 mt-4 ${
         alignment === 'center' ? 'mx-auto' : 
         alignment === 'right' ? 'ml-auto' : 
         ''

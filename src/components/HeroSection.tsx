@@ -21,7 +21,7 @@ const HeroSection = ({
       className="relative bg-cover bg-center py-24 md:py-32" 
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      <div className="absolute inset-0 bg-black/70"></div>
+      <div className="absolute inset-0 bg-green-900/70"></div>
       <div className="container-custom relative z-10">
         <div className="max-w-3xl animate-slide-in" style={{ animationDelay: '200ms' }}>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">

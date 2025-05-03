@@ -24,7 +24,7 @@ const FixtureCard = ({
 }: FixtureCardProps) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
-      <div className="bg-tpl-navy text-white py-2 px-4 flex items-center justify-between">
+      <div className="bg-green-600 text-white py-2 px-4 flex items-center justify-between">
         <span className="text-sm">{stage}</span>
         <span className="text-sm font-medium">
           {format(date, "dd MMM yyyy")} • {format(date, "h:mm a")}
@@ -38,7 +38,7 @@ const FixtureCard = ({
           </div>
           <div className="flex flex-col items-center justify-center w-1/3">
             <div className="bg-gray-100 rounded-lg py-2 px-4">
-              <span className="font-bold text-lg text-tpl-navy">VS</span>
+              <span className="font-bold text-lg text-green-600">VS</span>
             </div>
           </div>
           <div className="flex flex-col items-center w-1/3">
@@ -46,7 +46,7 @@ const FixtureCard = ({
             <p className="mt-2 font-medium text-sm text-center">{awayTeam.name}</p>
           </div>
         </div>
-        <div className="text-center text-sm text-tpl-gray">
+        <div className="text-center text-sm text-gray-600">
           <p>{venue}</p>
         </div>
       </div>

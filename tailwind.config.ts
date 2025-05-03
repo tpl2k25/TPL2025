@@ -25,9 +25,9 @@ export default {
 			},
 			colors: {
 				tpl: {
-					navy: '#172554',
+					navy: '#10b981', // Changed from navy blue to green
 					green: '#10b981',
-					orange: '#f97316',
+					orange: '#10b981', // Changed to green
 					gray: '#6b7280',
 				},
 				border: 'hsl(var(--border))',

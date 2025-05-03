@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-tpl-navy text-white sticky top-0 z-50 shadow-md">
+    <header className="bg-white text-green-600 sticky top-0 z-50 shadow-md">
       <div className="container-custom flex items-center justify-between py-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
@@ -41,8 +41,8 @@ const Navbar = () => {
               <li key={item.name}>
                 <Link
                   to={item.path}
-                  className={`hover:text-tpl-orange transition-colors ${
-                    location.pathname === item.path ? "text-tpl-orange font-semibold" : ""
+                  className={`hover:text-green-800 transition-colors ${
+                    location.pathname === item.path ? "text-green-800 font-semibold" : ""
                   }`}
                 >
                   {item.name}
@@ -55,24 +55,24 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button className="md:hidden" onClick={toggleMenu}>
           {isOpen ? (
-            <X size={24} className="text-white" />
+            <X size={24} className="text-green-600" />
           ) : (
-            <Menu size={24} className="text-white" />
+            <Menu size={24} className="text-green-600" />
           )}
         </button>
       </div>
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-tpl-navy border-t border-blue-800">
+        <div className="md:hidden bg-white border-t border-green-100">
           <div className="container-custom py-4">
             <ul className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <li key={item.name}>
                   <Link
                     to={item.path}
-                    className={`block py-2 hover:text-tpl-orange transition-colors ${
-                      location.pathname === item.path ? "text-tpl-orange font-semibold" : ""
+                    className={`block py-2 hover:text-green-800 transition-colors ${
+                      location.pathname === item.path ? "text-green-800 font-semibold" : ""
                     }`}
                     onClick={() => setIsOpen(false)}
                   >

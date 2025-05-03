@@ -42,32 +42,32 @@ const CountdownTimer = ({ targetDate, eventName }: CountdownTimerProps) => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-tpl-navy to-blue-800 rounded-lg p-6 text-white text-center">
+    <div className="bg-gradient-to-r from-green-600 to-green-500 rounded-lg p-6 text-white text-center">
       <h3 className="font-montserrat text-xl mb-4">Countdown to {eventName}</h3>
       <div className="flex justify-center gap-4 md:gap-8">
         <div className="flex flex-col items-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg w-16 h-16 flex items-center justify-center">
             <span className="text-3xl font-bold">{formatNumber(timeLeft.days)}</span>
           </div>
-          <span className="mt-2 text-sm text-gray-200">Days</span>
+          <span className="mt-2 text-sm text-gray-100">Days</span>
         </div>
         <div className="flex flex-col items-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg w-16 h-16 flex items-center justify-center">
             <span className="text-3xl font-bold">{formatNumber(timeLeft.hours)}</span>
           </div>
-          <span className="mt-2 text-sm text-gray-200">Hours</span>
+          <span className="mt-2 text-sm text-gray-100">Hours</span>
         </div>
         <div className="flex flex-col items-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg w-16 h-16 flex items-center justify-center">
             <span className="text-3xl font-bold">{formatNumber(timeLeft.minutes)}</span>
           </div>
-          <span className="mt-2 text-sm text-gray-200">Minutes</span>
+          <span className="mt-2 text-sm text-gray-100">Minutes</span>
         </div>
         <div className="flex flex-col items-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg w-16 h-16 flex items-center justify-center">
             <span className="text-3xl font-bold">{formatNumber(timeLeft.seconds)}</span>
           </div>
-          <span className="mt-2 text-sm text-gray-200">Seconds</span>
+          <span className="mt-2 text-sm text-gray-100">Seconds</span>
         </div>
       </div>
     </div>

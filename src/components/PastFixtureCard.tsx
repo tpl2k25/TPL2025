@@ -39,7 +39,7 @@ const PastFixtureCard = ({
   
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
-      <div className="bg-tpl-navy text-white py-2 px-4 flex items-center justify-between">
+      <div className="bg-green-600 text-white py-2 px-4 flex items-center justify-between">
         <span className="text-sm">{stage}</span>
         <span className="text-sm font-medium">
           {format(date, "dd MMM yyyy")}
@@ -52,7 +52,7 @@ const PastFixtureCard = ({
             <p className="mt-2 font-medium text-sm text-center">{homeTeam.name}</p>
           </div>
           <div className="flex items-center justify-center w-1/5">
-            <div className="bg-gray-800 text-white rounded-lg py-2 px-4">
+            <div className="bg-green-700 text-white rounded-lg py-2 px-4">
               <span className="font-bold text-xl">{homeScore} - {awayScore}</span>
             </div>
           </div>
@@ -63,7 +63,7 @@ const PastFixtureCard = ({
         </div>
         
         {/* Venue and time */}
-        <div className="text-center text-sm text-tpl-gray mb-4">
+        <div className="text-center text-sm text-gray-600 mb-4">
           <p>{venue} • {format(date, "h:mm a")}</p>
         </div>
         
@@ -76,7 +76,7 @@ const PastFixtureCard = ({
                 <div 
                   key={index} 
                   className={`text-xs py-1 px-2 rounded ${
-                    scorer.team === "home" ? "bg-blue-50 text-blue-800" : "bg-red-50 text-red-800"
+                    scorer.team === "home" ? "bg-green-50 text-green-800" : "bg-gray-50 text-gray-800"
                   }`}
                 >
                   <span className="font-medium">{scorer.name}</span> {scorer.minute}'

@@ -126,11 +126,11 @@ const HomePage = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
             <div className="bg-white p-6 rounded-xl shadow text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">6</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">4</div>
               <p className="text-gray-700">Teams</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">120+</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">30</div>
               <p className="text-gray-700">Players</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow text-center">

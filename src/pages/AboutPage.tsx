@@ -93,22 +93,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      
-      <section className="py-16 bg-gray-50">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-tpl-navy mb-6">Join The TPL Community</h2>
-            <p className="text-lg text-gray-700 mb-8">
-              Be part of the excitement and passion that makes the Thorkulam Premier League special. 
-              Follow your favorite teams, cheer for the players, and experience the thrill of top-quality football.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="btn-primary">Become a Volunteer</button>
-              <button className="btn-secondary">Subscribe to Newsletter</button>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

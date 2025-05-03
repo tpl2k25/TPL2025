@@ -5,6 +5,7 @@ import SectionHeading from "@/components/SectionHeading";
 import FixtureCard from "@/components/FixtureCard";
 import PastFixtureCard from "@/components/PastFixtureCard";
 import { fixtures, pastFixtures } from "@/data/mockData";
+import Stadium from "../assets/images/stadium.png";
 
 type StageFilter = "All" | "Group Stage" | "Quarterfinals" | "Semifinals" | "Final";
 type StatusFilter = "Upcoming" | "Completed" | "All";
@@ -150,24 +151,16 @@ const FixturesPage = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-4">Tournament Format</h3>
                 <p className="text-gray-200 mb-6">
-                  The TPL follows a mixed format with both group and knockout stages. The tournament begins with a group stage where the 6 teams are divided into two groups of 3. Each team plays against the other teams in their group once. The top two teams from each group advance to the semifinals, followed by a final to determine the champion.
+                  The TPL follows a mixed format with both group and knockout stages. The tournament begins with a group stage where the 4 teams are face each other. The top one team advance to final, and second and third teams have a Semi-final fight for Another final spot.
                 </p>
-                <div className="grid grid-cols-2 gap-4 text-center">
+                <div className="grid grid-cols-1 gap-4 text-center">
                   <div className="bg-white/10 p-4 rounded">
-                    <span className="block text-2xl font-bold">6</span>
+                    <span className="block text-2xl font-bold">4</span>
                     <span className="text-sm">Teams</span>
                   </div>
                   <div className="bg-white/10 p-4 rounded">
-                    <span className="block text-2xl font-bold">15</span>
-                    <span className="text-sm">Matches</span>
-                  </div>
-                  <div className="bg-white/10 p-4 rounded">
                     <span className="block text-2xl font-bold">8</span>
-                    <span className="text-sm">Weeks</span>
-                  </div>
-                  <div className="bg-white/10 p-4 rounded">
-                    <span className="block text-2xl font-bold">1</span>
-                    <span className="text-sm">Venue</span>
+                    <span className="text-sm">Matches</span>
                   </div>
                 </div>
               </div>
@@ -185,9 +178,9 @@ const FixturesPage = () => {
                   </div>
                   <div className="mt-4">
                     <img 
-                      src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                      src= {Stadium} 
                       alt="Kavil Arena" 
-                      className="w-full h-48 object-cover rounded"
+                      className="w-full h-60 object-cover rounded"
                     />
                     <div className="mt-4 grid grid-cols-2 gap-4">
                       <div className="bg-white/5 p-3 rounded text-center">
@@ -195,7 +188,7 @@ const FixturesPage = () => {
                         <p className="text-xs text-gray-300">Capacity</p>
                       </div>
                       <div className="bg-white/5 p-3 rounded text-center">
-                        <p className="text-lg font-semibold">2015</p>
+                        <p className="text-lg font-semibold">2016</p>
                         <p className="text-xs text-gray-300">Established</p>
                       </div>
                     </div>

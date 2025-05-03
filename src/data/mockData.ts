@@ -1,6 +1,8 @@
 import TeamLogo from "../assets/images/team-logo.png";
 import Playerpic from "../assets/images/player-pic.png";
 import Goalkeeperpic from "../assets/images/goalkeeper-pic.png";
+import Crowd from "../assets/images/crowd.png";
+import Goldenboot from "../assets/images/goldenboot.png";
 
 export const teams = [
   {
@@ -35,7 +37,7 @@ export const teams = [
   },
   {
     id: "team4",
-    name: "Calicut Dynamos",
+    name: "FC Dynamos",
     shortName: "Dynamos",
     logo: TeamLogo,
     description: "The Dynamos are known for their fast-paced attacking football and passionate fanbase. They have a record for scoring the most goals in a single season.",
@@ -253,135 +255,135 @@ export const players = [
   {
     id: "player19",
     name: "Bakir",
-    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    photo: Playerpic,
     position: "Forward",
-    age: 29,
+    age: 21,
     teamId: "team3",
-    teamName: "Calicut Dynamos",
-    teamLogo: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    teamName: "Bedakam Kings",
+    teamLogo: TeamLogo,
     instagramUrl: "https://instagram.com"
   },
   {
     id: "player20",
     name: "Munas",
-    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    photo: Playerpic,
     position: "Forward",
-    age: 29,
+    age: 15,
     teamId: "team3",
-    teamName: "Calicut Dynamos",
-    teamLogo: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    teamName: "Bedakam Kings",
+    teamLogo: TeamLogo,
     instagramUrl: "https://instagram.com"
   },
   {
     id: "player21",
     name: "Uvais",
-    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    photo: Playerpic,
     position: "Defender",
-    age: 29,
+    age: 14,
     teamId: "team3",
-    teamName: "Calicut Dynamos",
-    teamLogo: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    teamName: "Bedakam Kings",
+    teamLogo: TeamLogo,
     instagramUrl: "https://instagram.com"
   },
   {
     id: "player22",
     name: "Vaishnav",
-    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    photo: Goalkeeperpic,
     position: "Goalkeeper",
-    age: 29,
+    age: 22,
     teamId: "team3",
-    teamName: "Calicut Dynamos",
-    teamLogo: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    teamName: "Bedakam Kings",
+    teamLogo: TeamLogo,
     instagramUrl: "https://instagram.com"
   },
   // Team-4
   {
     id: "player23",
     name: "Samad",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    photo: Playerpic,
     position: "Forward",
-    age: 30,
+    age: 21,
     teamId: "team4",
-    teamName: "Malappuram Rovers",
-    teamLogo: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    teamName: "FC Dynamos",
+    teamLogo: TeamLogo,
     instagramUrl: "https://instagram.com",
     isCaptain: true
   },
   {
     id: "player24",
     name: "Afnaz",
-    photo: "https://images.unsplash.com/photo-1539614471970-1f78c82bdf6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    photo: Playerpic,
     position: "Defender",
-    age: 26,
+    age: 17,
     teamId: "team4",
-    teamName: "Calicut Dynamos",
-    teamLogo: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    teamName: "FC Dynamos",
+    teamLogo: TeamLogo,
     instagramUrl: "https://instagram.com"
   },
   {
     id: "player25",
     name: "Shailu",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    photo: Playerpic,
     position: "Midfielder",
-    age: 28,
+    age: 21,
     teamId: "team4",
-    teamName: "Kottakkal United",
-    teamLogo: "https://images.unsplash.com/photo-1639181532209-e2e8d7a5b858?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    teamName: "FC Dynamos",
+    teamLogo: TeamLogo,
     instagramUrl: "https://instagram.com"
   },
   {
     id: "player26",
     name: "Shazil",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    photo: Playerpic,
     position: "Forward",
-    age: 28,
+    age: 18,
     teamId: "team4",
-    teamName: "Kottakkal United",
-    teamLogo: "https://images.unsplash.com/photo-1639181532209-e2e8d7a5b858?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    teamName: "FC Dynamos",
+    teamLogo: TeamLogo,
     instagramUrl: "https://instagram.com"
   },
   {
     id: "player27",
     name: "Aslah",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    photo: Playerpic,
     position: "Defender",
-    age: 28,
+    age: 19,
     teamId: "team4",
-    teamName: "Kottakkal United",
-    teamLogo: "https://images.unsplash.com/photo-1639181532209-e2e8d7a5b858?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    teamName: "FC Dynamos",
+    teamLogo: TeamLogo,
     instagramUrl: "https://instagram.com"
   },
   {
     id: "player28",
     name: "Mithu",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    photo: Playerpic,
     position: "Defender",
-    age: 28,
+    age: 18,
     teamId: "team4",
-    teamName: "Kottakkal United",
-    teamLogo: "https://images.unsplash.com/photo-1639181532209-e2e8d7a5b858?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    teamName: "FC Dynamos",
+    teamLogo: TeamLogo,
     instagramUrl: "https://instagram.com"
   },
   {
     id: "player29",
     name: "Rafid",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    photo: Goalkeeperpic,
     position: "Goalkeeper",
-    age: 28,
+    age: 17,
     teamId: "team4",
-    teamName: "Kottakkal United",
-    teamLogo: "https://images.unsplash.com/photo-1639181532209-e2e8d7a5b858?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    teamName: "FC Dynamos",
+    teamLogo: TeamLogo,
     instagramUrl: "https://instagram.com"
   },
   {
     id: "player30",
     name: "Rizan",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    photo: Playerpic,
     position: "Midfielder",
-    age: 28,
+    age: 16,
     teamId: "team4",
-    teamName: "Kottakkal United",
-    teamLogo: "https://images.unsplash.com/photo-1639181532209-e2e8d7a5b858?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+    teamName: "FC Dynamos",
+    teamLogo: TeamLogo,
     instagramUrl: "https://instagram.com"
   }
 ];
@@ -389,7 +391,7 @@ export const players = [
 export const fixtures = [
   {
     id: "fix1",
-    date: new Date(2025, 6, 15, 19, 30), // July 15, 2025, 7:30 PM
+    date: new Date(2025, 4, 11, 8, 30),
     venue: "Kavil Arena",
     homeTeam: teams[0],
     awayTeam: teams[1],
@@ -397,7 +399,7 @@ export const fixtures = [
   },
   {
     id: "fix2",
-    date: new Date(2025, 6, 16, 17, 0), // July 16, 2025, 5:00 PM
+    date: new Date(2025, 4, 11, 9, 30),
     venue: "Kavil Arena",
     homeTeam: teams[2],
     awayTeam: teams[3],
@@ -405,7 +407,7 @@ export const fixtures = [
   },
   {
     id: "fix4",
-    date: new Date(2025, 6, 21, 18, 30), // July 21, 2025, 6:30 PM
+    date: new Date(2025, 4, 11, 10, 30),
     venue: "Kavil Arena",
     homeTeam: teams[0],
     awayTeam: teams[2],
@@ -413,60 +415,44 @@ export const fixtures = [
   },
   {
     id: "fix5",
-    date: new Date(2025, 7, 2, 19, 30), // August 2, 2025, 7:30 PM
+    date: new Date(2025, 4, 11, 11, 30),
     venue: "Kavil Arena",
     homeTeam: teams[3],
     awayTeam: teams[1],
-    stage: "Quarterfinals"
+    stage: "Group Stage"
   },
+  {
+    id: "fix6",
+    date: new Date(2025, 4, 11, 12, 30),
+    venue: "Kavil Arena",
+    homeTeam: teams[1],
+    awayTeam: teams[2],
+    stage: "Group Stage"
+  },
+  {
+    id: "fix7",
+    date: new Date(2025, 4, 11, 13, 30),
+    venue: "Kavil Arena",
+    homeTeam: teams[3],
+    awayTeam: teams[0],
+    stage: "Group Stage"
+  }
 ];
 
 // Add past fixtures with scores and scorers
 export const pastFixtures = [
   {
-    id: "pastfix1",
-    date: new Date(2025, 6, 5, 19, 0), // July 5, 2025, 7:00 PM
+    id: "pastfix2",
+    date: new Date(2024, 4, 7, 17, 30),
     venue: "Kavil Arena",
     homeTeam: teams[0],
     awayTeam: teams[3],
-    stage: "Group Stage",
-    homeScore: 3,
-    awayScore: 1,
-    scorers: [
-      { name: "Rahul Menon", team: "home", minute: 23 },
-      { name: "Sanjay Varma", team: "away", minute: 38 },
-      { name: "Ravi Pillai", team: "home", minute: 56 },
-      { name: "Rahul Menon", team: "home", minute: 82 }
-    ]
-  },
-  {
-    id: "pastfix2",
-    date: new Date(2025, 6, 7, 17, 30), // July 7, 2025, 5:30 PM
-    venue: "Kavil Arena",
-    homeTeam: teams[1],
-    awayTeam: teams[2],
-    stage: "Group Stage",
+    stage: "Final",
     homeScore: 2,
-    awayScore: 2,
+    awayScore: 0,
     scorers: [
-      { name: "Arun Kumar", team: "home", minute: 15 },
-      { name: "Vijay Nair", team: "away", minute: 34 },
-      { name: "Adarsh Menon", team: "away", minute: 67 },
-      { name: "Fahad Ahmed", team: "home", minute: 89 }
-    ]
-  },
-  {
-    id: "pastfix4",
-    date: new Date(2025, 6, 10, 18, 0), // July 10, 2025, 6:00 PM
-    venue: "Kavil Arena",
-    homeTeam: teams[2],
-    awayTeam: teams[3],
-    stage: "Group Stage",
-    homeScore: 1,
-    awayScore: 1,
-    scorers: [
-      { name: "Mohammed Rizwan", team: "home", minute: 54 },
-      { name: "Sanjay Varma", team: "away", minute: 79 }
+      { name: "Najeeb", team: "home", minute: 76 },
+      { name: "Suhail", team: "home", minute: 90 }
     ]
   }
 ];
@@ -475,153 +461,150 @@ export const previousSeasons = [
   {
     year: "2024",
     champion: {
-      name: "Thorkulam Warriors",
-      logo: "https://images.unsplash.com/photo-1580564931796-db6ba6293aff?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+      name: "Azurians",
+      logo: TeamLogo,
     },
     championCaptain: {
-      name: "Rahul Menon",
-      photo: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
+      name: "Suhail",
+      photo: Playerpic
     },
     runnerUp: {
-      name: "Koduvally Kings",
-      logo: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+      name: "Deziders FC",
+      logo: TeamLogo,
     },
     runnerUpCaptain: {
-      name: "Vijay Nair",
-      photo: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
+      name: "Rafeeque",
+      photo: Playerpic
     },
     topScorer: {
-      name: "Rahul Menon",
-      photo: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
-      goals: 18,
-      team: "Warriors"
+      name: "Najeeb",
+      photo: Playerpic,
+      goals: 6,
+      team: "Azurians"
     },
     bestPlayer: {
-      name: "Rahul Menon",
-      photo: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+      name: "Suhail",
+      photo: Playerpic,
     },
     bestGoalkeeper: {
-      name: "Mohammed Rizwan",
-      photo: "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
-      team: "Rovers"
+      name: "Vaishnav",
+      photo: Goalkeeperpic,
+      team: "Azurians"
     },
-    bestYoungPlayer: {
-      name: "Adarsh Menon",
-      photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
-      age: 23,
-      team: "Kings"
+    bestDefender: {
+      name: "Rafeeque",
+      photo: Playerpic,
+      team: "Deziders FC"
     },
     photo: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    summary: "The 2024 season saw Thorkulam Warriors dominate from start to finish, with striker Rahul Menon in exceptional form. The Warriors defeated Koduvally Kings 3-1 in the final."
+    summary: "The 2024 season saw Azurians dominate from start to finish, with Midfielder Suhail in exceptional form. The Azurians defeated Deziders 2-0 in the final."
   },
   {
     year: "2023",
     champion: {
-      name: "Koduvally Kings",
-      logo: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+      name: "Azurians",
+      logo: TeamLogo,
     },
     championCaptain: {
-      name: "Vijay Nair",
-      photo: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
+      name: "Suhail",
+      photo: Playerpic
     },
     runnerUp: {
-      name: "Calicut Dynamos",
-      logo: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+      name: "FC Dynamos",
+      logo: TeamLogo,
     },
     runnerUpCaptain: {
-      name: "Sanjay Varma",
-      photo: "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
+      name: "Afsal",
+      photo: Playerpic
     },
     topScorer: {
-      name: "Adarsh Menon",
-      photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
-      goals: 16,
-      team: "Kings"
+      name: "Safvan",
+      photo: Playerpic,
+      goals: 4,
+      team: "FC Dynamos"
     },
     bestPlayer: {
-      name: "Anand Krishnan",
-      photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+      name: "Basith",
+      photo: Playerpic,
     },
     bestGoalkeeper: {
-      name: "Saheer Ali",
-      photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
-      team: "Warriors"
+      name: "Rafid",
+      photo: Goalkeeperpic,
+      team: "Azurians"
     },
-    bestYoungPlayer: {
-      name: "Sanjay Varma",
-      photo: "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
-      age: 22,
-      team: "Dynamos"
+    bestDefender: {
+      name: "Suhail",
+      photo: Playerpic,
+      team: "Azurians"
     },
     photo: "https://images.unsplash.com/photo-1517604941870-1bc98bf905b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    summary: "The 2023 season was marked by Koduvally Kings' brilliant midfield play, orchestrated by Anand Krishnan. They defeated Calicut Dynamos 2-0 in a tense final."
+    summary: "The 2023 season was marked by Azurians' brilliant midfield play, orchestrated by Basith. They defeated FC Dynamos 1-0 in a tense final."
   },
   {
     year: "2022",
     champion: {
-      name: "Thorkulam Warriors",
-      logo: "https://images.unsplash.com/photo-1580564931796-db6ba6293aff?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+      name: "Mavericks",
+      logo: TeamLogo,
     },
     championCaptain: {
-      name: "Rahul Menon",
-      photo: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
+      name: "Sajid",
+      photo: Playerpic
     },
     runnerUp: {
-      name: "Pallikkara Panthers",
-      logo: "https://images.unsplash.com/photo-1571360674439-7f4f1c43ab37?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+      name: "Dazrox FC",
+      logo: TeamLogo,
     },
     runnerUpCaptain: {
-      name: "Arun Kumar",
-      photo: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
+      name: "Rafeeque",
+      photo: Playerpic
     },
     topScorer: {
-      name: "Arun Kumar",
-      photo: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
-      goals: 14,
-      team: "Panthers"
+      name: "Bakir",
+      photo: Playerpic,
+      goals: 4,
+      team: "Mavericks"
     },
     bestPlayer: {
-      name: "Ravi Pillai",
-      photo: "https://images.unsplash.com/photo-1539614471970-1f78c82bdf6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
+      name: "Sajid",
+      photo: Playerpic,
     },
     bestGoalkeeper: {
-      name: "Mohammed Rizwan",
-      photo: "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
-      team: "Rovers"
+      name: "Rafid",
+      photo: Playerpic,
+      team: "FC Dynamos"
     },
-    bestYoungPlayer: {
-      name: "Fahad Ahmed",
-      photo: "https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80",
-      age: 21,
-      team: "Panthers"
+    bestDefender: {
+      name: "Aslah",
+      photo: Playerpic,
+      team: "FC Dynamos"
     },
     photo: "https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    summary: "The 2022 season featured a remarkable defensive display from the Warriors, led by captain Ravi Pillai. They defeated the Panthers in a penalty shootout after a 1-1 draw in the final."
+    summary: "The 2022 season featured a remarkable defensive display from the Mavericks, led by captain Sajid. They defeated the Deziderz in a penalty shootout after a 1-1 draw in the final."
   }
 ];
 
 export const tournamentInfo = {
-  history: "The Thorkulam Premier League (TPL) was founded in 2015 as a local tournament to promote football in the region. What started as a small competition with just 6 teams has now grown into one of the most prestigious football tournaments in the area, featuring some of the best local talents and drawing large crowds to every match. Over the years, the TPL has developed a reputation for exciting, high-quality football and has been instrumental in developing local talent, with several players going on to represent state and national teams.",
-  format: "The TPL follows a mixed format with both group and knockout stages. The tournament begins with a group stage where the 6 teams are divided into two groups of 3. Each team plays against the other teams in their group once. The top two teams from each group advance to the semifinals, followed by a final to determine the champion. The entire tournament spans approximately 8 weeks, typically taking place during the summer months.",
-  rules: "The TPL follows standard FIFA rules with a few modifications. Matches consist of two halves of 45 minutes each. In the group stage, teams receive 3 points for a win, 1 for a draw, and 0 for a loss. If two or more teams are tied on points, the ranking is determined by goal difference, goals scored, and head-to-head results. In the knockout stages, if a match ends in a draw after 90 minutes, it proceeds directly to a penalty shootout without extra time.",
-  venues: "The TPL matches are primarily held at the Thorkulam Stadium, a modern facility with a capacity of 10,000 spectators. Some matches are also played at the Pallikkara Arena and Koduvally Sports Complex, both with capacities of around 7,000. All venues feature natural grass surfaces and modern facilities for both players and spectators.",
-  teams: "The TPL currently features 6 teams representing different localities in and around Thorkulam. Each team is allowed a squad of up to 25 players, with a maximum of 3 players from outside the region. The teams compete not only for the championship trophy but also for individual awards including the Golden Boot (top scorer), Golden Ball (best player), Golden Glove (best goalkeeper), and Best Young Player."
+  history: "The Thorkulam Premier League (TPL) was founded in 2016 as a local tournament to promote football in the region. What started as a small competition with just 4 teams has now grown into one of the most prestigious football tournaments in the area, featuring some of the best local talents and drawing large crowds to every match. Over the years, the TPL has developed a reputation for exciting, high-quality football and has been instrumental in developing local talent.",
+  format: "The TPL follows a mixed format with both group and knockout stages. The tournament begins with a group stage where the 4 teams fight each other. Each team plays against the other teams in their group once. The top one team from each group advance to the final, and following top 2 will fight for another final spot, followed by a final to determine the champion.",
+  rules: "The TPL follows standard FIFA rules with a few modifications. Matches consist of two halves of 8 minutes each. In the group stage, teams receive 3 points for a win, 1 for a draw, and 0 for a loss. If two or more teams are tied on points, the ranking is determined by goal difference, goals scored, and head-to-head results. In the knockout stages, if a match ends in a draw after Fulltime, it proceeds directly to a penalty shootout without extra time.",
+  venues: "The TPL matches are primarily held at the Kavil Arena, a modern facility with a capacity of 10,000 spectators.",
+  teams: "The TPL currently features 4 teams representing different localities in and around Thorkulam. Each team is allowed a squad of up to 8 players. The teams compete not only for the championship trophy but also for individual awards including the Golden Boot (top scorer), Golden Ball (best player), Golden Glove (best goalkeeper), and Best Defender."
 };
 
 export const highlights = [
   {
     title: "Defending Champions",
-    content: "Thorkulam Warriors are the current TPL champions, having defeated Koduvally Kings 3-1 in last season's thrilling final.",
+    content: "Azurians are the current TPL champions, having defeated Deziders Fc 2-0 in last season's thrilling final.",
     image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
   },
   {
     title: "Top Scorer",
-    content: "Najeeb of Thorkulam Warriors holds the Golden Boot with an impressive 6 goals in the 2024 season.",
-    image: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
+    content: "Najeeb of Azurinas holds the Golden Boot with an impressive 6 goals in the 2024 season.",
+    image: Goldenboot
   },
   {
     title: "Record Attendance",
     content: "Last season's final saw a record attendance of 9,800 fans at Kavil Arena, creating an electric atmosphere.",
-    image: "https://images.unsplash.com/photo-1493662424514-90ff976bd7e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80"
+    image: Crowd
   }
 ];

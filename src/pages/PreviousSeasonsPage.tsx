@@ -145,13 +145,13 @@ const PreviousSeasonsPage = () => {
                   
                   <div className="flex items-center p-4 bg-gray-50 rounded-lg">
                     <img 
-                      src={season.bestYoungPlayer.photo} 
-                      alt={season.bestYoungPlayer.name} 
+                      src={season.bestDefender.photo} 
+                      alt={season.bestDefender.name} 
                       className="h-16 w-16 object-cover rounded-full mr-3" 
                     />
                     <div>
-                      <p className="font-medium">{season.bestYoungPlayer.name}</p>
-                      <p className="text-sm text-tpl-gray">Best Young Player • {season.bestYoungPlayer.age} years</p>
+                      <p className="font-medium">{season.bestDefender.name}</p>
+                      <p className="text-sm text-tpl-gray">Best Defender</p>
                     </div>
                   </div>
                 </div>

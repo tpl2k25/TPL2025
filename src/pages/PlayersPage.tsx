@@ -48,7 +48,7 @@ const PlayersPage = () => {
                 </label>
                 <input
                   type="text"
-                  placeholder="Search players..."
+                  placeholder="Search players.."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-tpl-navy focus:border-transparent"
